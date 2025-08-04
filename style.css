@@ -185,8 +185,8 @@
 /* Responsive para móviles */
 @media (max-width: 600px) {
     .card {
-        width: 90vw;
-        height: 60vw;
+        width: 60vw;
+        height: 90vw;
         max-width: 320px;
         max-height: 480px;
     }
