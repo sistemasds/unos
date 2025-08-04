@@ -25,19 +25,18 @@
 .card::before {
     content: "";
     position: absolute;
-    bottom: -24px;
     bottom: 0;
-    left: 0;
+    left: 50%;
     width: 210px;
     height: 110px;
-    transform: translate(0em, 60%) rotateX(90deg) scale(0.8);
+    transform: translate(-50%, 60%) rotateX(90deg) scale(0.8);
     border-radius: 100%;
     background-color: #000a;
     z-index: -10;
     filter: blur(24px);
 }
 
-.card-container:hover .card {
+.card-container.girar .card {
     transform: rotateY(180deg);
 }
 
@@ -184,10 +183,10 @@
 
 /* Responsive para móviles */
 @media (max-width: 600px) {
-    .card {
-        width: 60vw;
-        height: 90vw;
-        max-width: 320px;
+    .card {     
+        width: 80vw;
+        height: 105vw;
+        max-width: 300px;
         max-height: 480px;
     }
     .front {
