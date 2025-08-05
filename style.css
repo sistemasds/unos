@@ -185,7 +185,7 @@
 @media (max-width: 600px) {
     .card {     
         width: 80vw;
-        height: 105vw;
+        height: 205vw;
         max-width: 300px;
         max-height: 480px;
     }
@@ -193,3 +193,4 @@
         transform: none;
     }
 }
+
