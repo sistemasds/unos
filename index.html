@@ -60,7 +60,18 @@
             </div>
         </div>
     </div>
+ <script>
+        // Solo girar una vez por interacción
+        function girarCarta(e) {
+            e.preventDefault(); // Evita doble disparo en móviles
+            document.querySelector('.card-container').classList.toggle('girar');
+        }
 
+        // Usar solo uno según el dispositivo
+        document.addEventListener('touchstart', girarCarta, { passive: false });
+        document.addEventListener('click', girarCarta);
+    </script>
 </body>
+
 
 </html>
